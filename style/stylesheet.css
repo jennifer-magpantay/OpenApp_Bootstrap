@@ -1,0 +1,122 @@
+/* column sizes: xs sm md lg xl */
+/* container - row - columns */
+/* col-numberColumns : col-md-6 */
+/* #fdd835 #ffff6b #c6a700 */
+.navbar-brand {
+    font-family: 'moon';
+}
+
+#welcome {
+    background-color: #fdd835;  
+    padding-bottom: 40px;
+}
+
+.carousel {
+    padding-top: 50px;
+}
+
+.card {
+    background-color: white;
+    width: auto;
+    height: 530px;   
+    margin: 0;
+    padding: 10px 15px 10px 15px;  
+
+}
+
+#about{
+    background-color: #ffff6b; 
+    width: auto;
+    height: 550px;   
+    margin: 0;
+    padding: 20px 15px 10px 15px;  
+
+}
+
+#wireframes{
+    background-color: #fdd835;  
+    width: auto;
+    height: 550px;   
+    margin: 0;
+    padding: 20px 15px 10px 15px;  
+
+}
+
+#contact{
+    background-color: #ffff6b; 
+    width: auto;
+    height: 550px;   
+    margin: 0;
+    padding: 20px 15px 10px 15px;  
+
+}
+
+.profile {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 4%;
+    height: auto;
+}
+
+footer {
+    color: white;
+    background-color: black;  
+    width: auto;
+    height: auto;
+    padding: 10px 15px 10px 15px;
+}
+
+footer p {
+    font-size: 14px; 
+    line-height: 08px;   
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.bottom {
+    font-size: 12px;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid black;
+}
+
+.logo {
+    width: 45%;
+    height: auto;
+    margin: 0;
+}
+
+.card_wireframe {
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'moon';
+    src: url(Moon2.0-Bold.otf);   
+}
+
+
+h1, h2 {
+    font-family: 'moon';
+    
+}
+
+.carousel-item h4 {
+    font-style: italic;
+}
