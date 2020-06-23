@@ -2,15 +2,20 @@
 /* container - row - columns */
 /* col-numberColumns : col-md-6 */
 /* #fdd835 #ffff6b #c6a700 */
-hmtl {
+html {
     scroll-behavior: smooth;
 }
+
 .navbar-brand {
     font-family: 'moon';
 }
 
+.navbar {
+    background-color: black;
+}
+
 #welcome {
-    background-color: #fdd835;  
+    background-color: #fdd835;
     padding-bottom: 40px;
 }
 
@@ -18,39 +23,48 @@ hmtl {
     padding-top: 50px;
 }
 
+.scroll_page {
+    position: relative;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.bg-light {
+    background-color: brown;
+}
+
+#sec1,
+#sec3 {
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+#sec2,
+#sec4 {
+    background-color: whitesmoke;
+    padding: 10px 15px 10px 15px;
+}
+
 .card {
     background-color: white;
     width: auto;
-    height: 530px;   
+    height: 530px;
     margin: 0;
-    padding: 10px 15px 10px 15px;  
-
+    padding: 10px 15px 10px 15px;
 }
 
-#about{
-    background-color: #ffff6b; 
-    width: auto;
-    height: 550px;   
+#about {
+    background-color: #ffff6b;
+    padding: 20px 15px 10px 15px;
     margin: 0;
-    padding: 20px 15px 10px 15px;  
-
 }
 
-#wireframes{
-    background-color: #fdd835;  
+#wireframes {
+    background-color: #fdd835;
     width: auto;
-    height: 550px;   
+    height: 550px;
     margin: 0;
-    padding: 20px 15px 10px 15px;  
-
-}
-
-#contact{
-    background-color: #ffff6b; 
-    width: auto;
-    height: 550px;   
-    margin: 0;
-    padding: 20px 15px 10px 15px;  
+    padding: 20px 15px 10px 15px;
 
 }
 
@@ -67,21 +81,22 @@ hmtl {
 
 footer {
     color: white;
-    background-color: black;  
+    background-color: black;
     width: auto;
     height: auto;
     padding: 10px 15px 10px 15px;
+
 }
 
 footer p {
-    font-size: 14px; 
-    line-height: 08px;   
+    font-size: 14px;
+    line-height: 08px;
 }
 
 ul {
     list-style-type: none;
     padding-left: 0;
-    
+
 }
 
 li {
@@ -95,7 +110,7 @@ li {
 
 hr {
     border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .logo {
@@ -111,13 +126,13 @@ hr {
 
 @font-face {
     font-family: 'moon';
-    src: url(Moon2.0-Bold.otf);   
+    src: url(Moon2.0-Bold.otf);
 }
 
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'moon';
-    
 }
 
 .carousel-item h4 {

@@ -19,15 +19,18 @@
     <body>
         <header></header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">OPENAPP</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            <!-- toggler button/icon -->
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbar_nav"
+                aria-controls="navbar_nav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <!-- div class wraping the links -->
+            <div class="collapse navbar-collapse" id="navbar_nav">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#about">ABOUT</a>
                     <a class="nav-item nav-link" href="#wireframes">WIREFRAME</a>
@@ -36,17 +39,18 @@
             </div>
         </nav>
 
-        <!-- content -->
+        <!-- greeting/welcome screen -->
         <section id="welcome">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <!-- logo & carousel for quotes -->
+                        <!-- logo with resposinve behaviour -->
                         <img class="logo" src="images/logo.png"
-                            class="img-fluid"
-                            alt="OpenApp logo full screen">
+                            class="img-fluid" alt="OpenApp logo full screen">
+                        <!-- carousel -->
                         <div id="carousel_quotes" class="carousel slide"
                             data-ride="carousel">
+                            <!-- carousel items/quotes -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <h2>"Sometimes the worst place to be is
@@ -95,14 +99,119 @@
             </div>
         </section>
 
+        <!-- about the OpenApp-->
         <section id="about">
-            <a class="navbar-brand" href="#">OPENAPP</a>
             <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <!-- <div class="col-8 my-1"> or <div class="col-8 mt-1"> -->
-                        <!-- <h1 class="display-1">About</h1> -->
-                        <h1>ABOUT</h1>
+
+                <div class="row">
+                    <div class="col-12 text-center mt-3">
+                        <h2>Lorem ipsum dolor sit</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Modi dolorum reiciendis sit cum</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col align-self-center">
+                        <!-- scrollspy -->
+                        <nav id="navbar-scroll-horizontal" class="navbar
+                            navbar-expand-lg navbar-dark">
+                            <a class="navbar-brand" href="#">About</a>
+                            <!-- toggler button/icon -->
+                            <button class="navbar-toggler" type="button"
+                                data-toggle="collapse"
+                                data-target="#navbar_nav"
+                                aria-controls="navbar_nav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- div class wraping the links -->
+                            <div class="collapse navbar-collapse"
+                                id="navbar_nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec1">Introduction</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec2">Application</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec3">Gamification</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec4">More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- content -->
+                        <div data-spy="scroll"
+                            data-target="#navbar-scroll-horizontal"
+                            data-offset="0" class="scroll_page">
+                            <!-- spliting content/sec into divs -->
+                            <div id="sec1">
+                                <h4>@fat</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                            </div>
+                            <div id="sec2">
+                                <h4>@mdo</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                            </div>
+
+                            <div id="sec3">
+                                <h4>one</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                            </div>
+                            <div id="sec4">
+                                <h4>two</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Hic, quis ad reiciendis
+                                    deleniti accusamus omnis sed soluta sapiente
+                                    voluptatum excepturi molestiae corporis
+                                    dolore
+                                    sequi aperiam nulla temporibus totam
+                                    doloremque
+                                    fuga!</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -120,16 +229,18 @@
                         <p class="card-text">This is a longer card with
                             supporting text below as a natural lead-in to
                             additional content. This content is a little bit
-                            longer.</p>                       
+                            longer.</p>
                     </div>
-                    <button type="button" class="btn btn-secondary float-right">MORE</button>
+                    <button type="button" class="btn btn-secondary
+                        float-right">MORE</button>
                 </div>
                 <div class="card">
                     <img src="images/greeting.png" class="card-img-top"
                         class="img-fluid" alt="Code Validation">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below
+                        <p class="card-text">This card has supporting text
+                            below
                             as a natural lead-in to additional content.</p>
                     </div>
                 </div>
@@ -146,12 +257,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="contact">
-            <a class="navbar-brand" href="#">OPENAPP</a>
-            <h1>CONTACT</h1>
-            <img class="profile" src="images/profile.png">
         </section>
 
         <footer>
@@ -172,7 +277,8 @@
                                         class="icon"
                                         src="images/linkedin_white.png"
                                         alt="Linkedin Profile"></a></li>
-                            <li><a href="https://github.com/jennifer-magpantay"><img
+                            <li><a
+                                    href="https://github.com/jennifer-magpantay"><img
                                         class="icon"
                                         src="images/github_white.png"
                                         alt="Github Repositories"></a></li>
@@ -186,7 +292,6 @@
                 </div>
                 <hr>
                 <p class="text-muted">&copy;2020 Jennifer Magpantay</p>
-
             </div>
         </footer>
 
