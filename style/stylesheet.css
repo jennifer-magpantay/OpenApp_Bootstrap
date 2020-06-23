@@ -2,6 +2,9 @@
 /* container - row - columns */
 /* col-numberColumns : col-md-6 */
 /* #fdd835 #ffff6b #c6a700 */
+hmtl {
+    scroll-behavior: smooth;
+}
 .navbar-brand {
     font-family: 'moon';
 }
