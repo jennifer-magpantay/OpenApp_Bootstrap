@@ -1,140 +1,321 @@
-/* column sizes: xs sm md lg xl */
-/* container - row - columns */
-/* col-numberColumns : col-md-6 */
-/* #fdd835 #ffff6b #c6a700 */
+/* ----- Top-Down order ----- */
+/*Alphabetize your Properties*/
+/* ----- GLOBAL ----- */
+/* ----- HTML ----- */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
-.navbar-brand {
-    font-family: 'moon';
-}
-
-.navbar {
-    background-color: black;
-}
-
-#welcome {
-    background-color: #fdd835;
-    padding-bottom: 40px;
-}
-
-.carousel {
-    padding-top: 50px;
-}
-
-.scroll_page {
-    position: relative;
-    overflow-y: scroll;
-    height: 400px;
-}
-
-.bg-light {
-    background-color: brown;
-}
-
-#sec1,
-#sec3 {
-    background-color: white;
-    padding: 10px 15px 10px 15px;
-}
-
-#sec2,
-#sec4 {
-    background-color: whitesmoke;
-    padding: 10px 15px 10px 15px;
-}
-
-.card {
-    background-color: white;
-    width: auto;
-    height: 530px;
-    margin: 0;
-    padding: 10px 15px 10px 15px;
-}
-
-#about {
-    background-color: #ffff6b;
-    padding: 20px 15px 10px 15px;
-    margin: 0;
-}
-
-#wireframes {
-    background-color: #fdd835;
-    width: auto;
-    height: 550px;
-    margin: 0;
-    padding: 20px 15px 10px 15px;
-
-}
-
-.profile {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.icon {
-    width: 4%;
-    height: auto;
-}
-
-footer {
-    color: white;
-    background-color: black;
-    width: auto;
-    height: auto;
-    padding: 10px 15px 10px 15px;
-
-}
-
-footer p {
-    font-size: 14px;
-    line-height: 08px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-
-}
-
-li {
-    display: inline;
-    padding-right: 10px;
-}
-
-.bottom {
-    font-size: 12px;
-}
-
-hr {
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid black;
-}
-
-.logo {
-    width: 45%;
-    height: auto;
-    margin: 0;
-}
-
-.card_wireframe {
-    width: 100%;
-    height: auto;
-}
-
+/* ----- Body ----- */
+/* ----- Text, Titles ----- */
 @font-face {
-    font-family: 'moon';
-    src: url(Moon2.0-Bold.otf);
+  font-family: "moon";
+  src: url(Moon2.0-Bold.otf);
 }
-
 
 h1,
-h2 {
-    font-family: 'moon';
+h2,
+h5,
+.navbar-brand {
+  font-family: "moon";
 }
 
 .carousel-item h4 {
-    font-style: italic;
+  font-style: italic;
+}
+
+.scroll_page h5,
+.scroll_page p,
+.card-body p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+/* ----- Links, Lists, References ----- */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  padding-right: 10px;
+}
+
+hr {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid black;
+}
+
+/* ----- HEADER ----- */
+/* ----- NAV-MENU ----- */
+.navbar {
+  background-color: black;
+}
+
+/* ----- MAIN-CONTENT ----- */
+#welcome {
+  background-color: #fdd835;
+  padding-bottom: 10px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+.carousel {
+  padding-top: 15px;
+}
+
+#about {
+  background-color: #ffff6b;
+  padding: 10px 15px 40px 15px;
+}
+
+.scroll_container,
+.card {
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.scroll_page {
+  position: relative;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+#navbar_nav {
+  padding-left: 10px;
+}
+
+#sec1,
+#sec3,
+#sec5 {
+  background-color: white;
+  padding: 10px 15px 10px 15px;
+}
+
+#sec2,
+#sec4,
+#sec6 {
+  background-color: whitesmoke;
+  padding: 10px 15px 10px 15px;
+}
+
+#wireframes {
+  background-color: #fdd835;
+  margin: 0;
+  padding: 10px 15px 40px 15px;
+}
+
+.card {
+  background-color: white;
+  margin: 0;
+  padding: 10px 15px 10px 15px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+  color: white;
+  background-color: black;
+  width: auto;
+  height: auto;
+  padding: 10px 15px 10px 15px;
+}
+
+/* ----- NAVIGATION ----- */
+/* ----- FORM ----- */
+/* ----- EXTRAS/GENERAL ----- */
+/* Buttons */
+
+/* ----- MEDIA QUERIES & BREAK POINTS ----- */
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+
+1rem = 16px*/
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+h4,
+.navbar-brand {
+  font-size: 1.05rem;
+}
+
+h5,
+.subtitle {
+  font-size: 1rem;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.85rem;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+/* Images */
+.logo {
+  width: 85%;
+  height: auto;
+  margin: 0;
+}
+
+.social_media_icon {
+  width: 18px;
+  height: auto;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h4,
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  h5,
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .blockquote-footer {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+
+  /* Images */
+  .logo {
+    width: 40%;
+    height: auto;
+    margin: 0;
+  }
+
+  social_media_icon {
+    width: 18px;
+    height: auto;
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4,
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  h5,
+  .subtitle {
+    font-size: 1.15rem;
+  }
+
+  .blockquote-footer {
+    font-size: 1.05rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  /* Images */
+  .logo {
+    width: 40%;
+    height: auto;
+    margin: 0;
+  }
+
+  .social_media_icon {
+    width: 18px;
+    height: auto;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4,
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  h5,
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .blockquote-footer {
+    font-size: 1.15rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+
+  /* Images */
+  .logo {
+    width: 45%;
+    height: auto;
+    margin: 0;
+  }
+
+  .social_media_icon {
+    width: 24px;
+    height: auto;
+  }
+
 }
