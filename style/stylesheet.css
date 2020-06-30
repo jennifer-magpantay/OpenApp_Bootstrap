@@ -41,11 +41,6 @@ li {
   padding-right: 10px;
 }
 
-hr {
-  border-top: 1px solid #8c8b8b;
-  border-bottom: 1px solid black;
-}
-
 /* ----- HEADER ----- */
 /* ----- NAV-MENU ----- */
 .navbar {
@@ -117,11 +112,24 @@ hr {
 
 /* ----- FOOTER ----- */
 .footer {
-  color: white;
   background-color: black;
-  width: auto;
+  color: whitesmoke;
+  padding: 20px 15px 10px 15px;  
   height: auto;
-  padding: 10px 15px 10px 15px;
+  width: auto;  
+}
+
+.footer hr {
+  border-top: 1px solid #737373;
+  border-bottom: 1px solid black;
+}
+
+.copyright-text{
+  color: #737373;
+}
+
+.interest_list li {
+  display: block;
 }
 
 /* ----- NAVIGATION ----- */
@@ -162,7 +170,7 @@ p {
   font-size: 0.85rem;
 }
 
-footer p {
+.footer p , .footer li {
   font-size: 0.75rem;
 }
 
@@ -206,7 +214,7 @@ footer p {
     font-size: 0.85rem;
   }
 
-  footer p {
+  .footer p , .footer li {
     font-size: 0.75rem;
   }
 
@@ -252,7 +260,7 @@ footer p {
     font-size: 0.95rem;
   }
 
-  footer p {
+  .footer p , .footer li {
     font-size: 0.8rem;
   }
 
@@ -302,7 +310,7 @@ footer p {
     font-size: 1rem;
   }
 
-  footer p {
+  .footer p , .footer li {
     font-size: 0.85rem;
   }
 
