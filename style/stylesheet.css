@@ -30,17 +30,6 @@ h5,
   text-indent: 20px;
 }
 
-/* ----- Links, Lists, References ----- */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  display: inline;
-  padding-right: 10px;
-}
-
 /* ----- HEADER ----- */
 /* ----- NAV-MENU ----- */
 .navbar {
@@ -66,16 +55,6 @@ li {
   padding: 10px 15px 40px 15px;
 }
 
-.scroll_container,
-.card {
-  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
-}
-.scroll_page {
-  position: relative;
-  overflow-y: scroll;
-  height: 400px;
-}
-
 #navbar_nav {
   padding-left: 10px;
 }
@@ -92,6 +71,27 @@ li {
 #sec6 {
   background-color: whitesmoke;
   padding: 10px 15px 10px 15px;
+}
+
+.scroll_container,
+.card {
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.scroll_container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.scroll_container li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.scroll_page {
+  position: relative;
+  overflow-y: scroll;
+  height: 400px;
 }
 
 #wireframes {
@@ -114,9 +114,9 @@ li {
 .footer {
   background-color: black;
   color: whitesmoke;
-  padding: 20px 15px 10px 15px;  
+  padding: 20px 15px 10px 15px;
   height: auto;
-  width: auto;  
+  width: auto;
 }
 
 .footer hr {
@@ -124,7 +124,7 @@ li {
   border-bottom: 1px solid black;
 }
 
-.copyright-text{
+.copyright-text {
   color: #737373;
 }
 
@@ -132,18 +132,12 @@ li {
   display: block;
 }
 
-/* ----- NAVIGATION ----- */
 /* ----- FORM ----- */
 /* ----- EXTRAS/GENERAL ----- */
-/* Buttons */
 
 /* ----- MEDIA QUERIES & BREAK POINTS ----- */
-
-/* 
-Extra small devices (portrait phones, less than 544px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-
-1rem = 16px*/
+/* Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first" - 1rem = 16px*/
 h1 {
   font-size: 1.25rem;
 }
@@ -170,13 +164,14 @@ p {
   font-size: 0.85rem;
 }
 
-.footer p , .footer li {
+.footer p,
+.footer li {
   font-size: 0.75rem;
 }
 
 /* Images */
 .logo {
-  width: 85%;
+  width: 80%;
   height: auto;
   margin: 0;
 }
@@ -214,7 +209,8 @@ p {
     font-size: 0.85rem;
   }
 
-  .footer p , .footer li {
+  .footer p,
+  .footer li {
     font-size: 0.75rem;
   }
 
@@ -229,7 +225,6 @@ p {
     width: 18px;
     height: auto;
   }
-  
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -260,7 +255,8 @@ p {
     font-size: 0.95rem;
   }
 
-  .footer p , .footer li {
+  .footer p,
+  .footer li {
     font-size: 0.8rem;
   }
 
@@ -275,7 +271,6 @@ p {
     width: 18px;
     height: auto;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -310,7 +305,8 @@ p {
     font-size: 1rem;
   }
 
-  .footer p , .footer li {
+  .footer p,
+  .footer li {
     font-size: 0.85rem;
   }
 
@@ -325,5 +321,4 @@ p {
     width: 24px;
     height: auto;
   }
-
 }
