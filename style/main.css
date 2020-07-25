@@ -1,0 +1,126 @@
+/********** GLOBAL **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 30px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    color: orange;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+hr {
+    border-top: 0px solid grey;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: darkgrey;
+}
+
+/* mouse over link */
+a:hover {
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color: darkgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+section {
+    margin: 20px 5px;
+}
+
+/********** ABOUT | PROFILE  **********/
+.header-about {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    padding: 15px 0 15px 80px;
+    background-color: #080808;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.header-about li {
+    padding-left: 100px;
+    font-size: 25px;
+    list-style: none;
+}
+
+.header-about h6 {
+    text-align: center;
+}
+
+/********** PROJECTS | PORTFOLIO  **********/
+.main-content {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    padding: 20px;
+    border-right: 1px solid grey;
+    ;
+
+}
+
+/********** SKILLS - ASIDE CONTENT  **********/
+.aside-skills {
+    padding: 20px;
+}
+
+/********** CONTACT INFO | SOCIAL MEDIA  **********/
+.footer-col {
+    padding: 20px;
+    background-color: black;
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+.footer-col a {
+    color: #f2f2f2;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
