@@ -33,6 +33,7 @@ h5 {
 h6 {
     font-size: 12px;
     font-weight: lighter;
+    margin: 4px 0 4px 0;
 }
 
 hr {
@@ -41,24 +42,23 @@ hr {
     margin-bottom: 25px;
 }
 
-/* unvisited link */
 a:link {
+    /* unvisited link */
     text-decoration: none;
     color: black;
 }
 
-/* visited link */
 a:visited {
+    /* visited link */
     color: darkgrey;
 }
 
-/* mouse over link */
 a:hover {
     font-weight: bold;
 }
 
-/* selected link */
 a:active {
+    /* selected link */
     color: darkgray;
 }
 
@@ -109,10 +109,15 @@ section {
 
 /********** CONTACT INFO | SOCIAL MEDIA  **********/
 .footer-col {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     background-color: black;
     color: #f2f2f2;
     font-size: 12px;
+}
+
+.footer-col h5 {
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .footer-col a {
@@ -123,4 +128,29 @@ section {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.social-media-list li {
+    display: inline;
+    padding-right: 5px;
+}
+
+.social_media_icon {
+    width: 18px;
+    height: auto;
+}
+
+.copyright-text {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    padding: 0 20px 20px 20px;
+    background-color: black;
+    color: #737373;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright-text hr {
+    border-top: 1px solid #737373;
+    border-bottom: 1px solid black;
 }

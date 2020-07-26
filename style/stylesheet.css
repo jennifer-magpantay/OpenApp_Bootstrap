@@ -1,12 +1,8 @@
-/* ----- Top-Down order ----- */
-/*Alphabetize your Properties*/
-/* ----- GLOBAL ----- */
-/* ----- HTML ----- */
+/********** GLOBAL **********/
 html {
   scroll-behavior: smooth;
 }
-/* ----- Body ----- */
-/* ----- Text, Titles ----- */
+
 @font-face {
   font-family: "moon";
   src: url(Moon2.0-Bold.otf);
@@ -14,20 +10,8 @@ html {
 
 h1,
 h2,
-h5,
-.navbar-brand {
+h5 {
   font-family: "moon";
-}
-
-.carousel-item h4 {
-  font-style: italic;
-}
-
-.scroll_page h5,
-.scroll_page p,
-.card-body p {
-  text-align: justify;
-  text-indent: 20px;
 }
 
 ul {
@@ -42,14 +26,34 @@ li {
 
 }
 
-/* ----- HEADER ----- */
-/* ----- NAV-MENU ----- */
+a:link { /* unvisited link */
+  text-decoration: none;
+  color: black;
+}
+
+a:visited { /* visited link */
+  color: darkgrey;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active { /* selected link */
+  color: darkgray;
+}
+
+/********** NAVBAR **********/
+.navbar-brand {
+  font-family: "moon";
+}
+
 .navbar {
   background-color: black;
 }
 
-/* ----- MAIN-CONTENT ----- */
-#welcome {
+/********** WELCOME **********/
+.welcome {
   background-color: #fdd835;
   padding-bottom: 10px;
 }
@@ -62,12 +66,17 @@ li {
   padding-top: 15px;
 }
 
-#about {
+.carousel-item h4 {
+  font-style: italic;
+}
+
+/********** ABOUT **********/
+.about {
   background-color: #ffff6b;
   padding: 10px 15px 40px 15px;
 }
 
-#navbar_nav {
+.about #navbar_nav {
   padding-left: 10px;
 }
 
@@ -96,7 +105,8 @@ li {
   height: 400px;
 }
 
-#wireframes {
+/********** WIREFRAMES **********/
+.wireframes {
   background-color: #fdd835;
   margin: 0;
   padding: 10px 15px 40px 15px;
@@ -108,11 +118,18 @@ li {
   padding: 10px 15px 10px 15px;
 }
 
+.scroll_page h5,
+.scroll_page p,
+.card-body p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
 .card-body {
   padding: 5px;
 }
 
-/* ----- FOOTER ----- */
+/********** FOOTER **********/
 .footer {
   background-color: black;
   color: whitesmoke;
@@ -121,9 +138,17 @@ li {
   width: auto;
 }
 
+.footer .container h6 {
+  font-weight: 600;
+}
+
 .footer hr {
   border-top: 1px solid #737373;
   border-bottom: 1px solid black;
+}
+
+.footer a {
+  color: whitesmoke;
 }
 
 #interest_list li {
@@ -133,9 +158,6 @@ li {
 .copyright-text {
   color: #737373;
 }
-
-/* ----- FORM ----- */
-/* ----- EXTRAS/GENERAL ----- */
 
 /* ----- MEDIA QUERIES & BREAK POINTS ----- */
 /* Extra small devices (portrait phones, less than 544px) 
